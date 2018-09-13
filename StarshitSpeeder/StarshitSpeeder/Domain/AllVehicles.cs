@@ -25,8 +25,10 @@ namespace StarshitSpeeder.Domain
     class FlyingShip : Vehicle
     {
        public bool HyperDrive { get; set; }
+       
+        public Person Owner { get; }
 
-        public FlyingShip(string brand, string registrationNumber, string color, Engine engine)
+        public FlyingShip(string brand, string registrationNumber, string color, Engine engine, Person owner)
         {
             Brand = brand;
 
@@ -35,6 +37,8 @@ namespace StarshitSpeeder.Domain
             Color = color;
 
             Engine = engine;
+
+            Owner = owner;
         }
 
     }

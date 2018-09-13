@@ -21,7 +21,8 @@ namespace StarshitSpeeder
                 "Imperial",
                 "ABC124",
                 "Poop-Brown",
-                battlestarEngine);
+                battlestarEngine,
+                new Person("Adama", "Commander"));
 
             Console.WriteLine();
         }
