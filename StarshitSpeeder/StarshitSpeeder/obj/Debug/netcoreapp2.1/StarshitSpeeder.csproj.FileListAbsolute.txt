@@ -1,0 +1,11 @@
+C:\Workspace\ECUtbildning\HEM03_PhilipEnglundBeta\StarshitSpeeder\StarshitSpeeder\bin\Debug\netcoreapp2.1\StarshitSpeeder.deps.json
+C:\Workspace\ECUtbildning\HEM03_PhilipEnglundBeta\StarshitSpeeder\StarshitSpeeder\bin\Debug\netcoreapp2.1\StarshitSpeeder.runtimeconfig.json
+C:\Workspace\ECUtbildning\HEM03_PhilipEnglundBeta\StarshitSpeeder\StarshitSpeeder\bin\Debug\netcoreapp2.1\StarshitSpeeder.runtimeconfig.dev.json
+C:\Workspace\ECUtbildning\HEM03_PhilipEnglundBeta\StarshitSpeeder\StarshitSpeeder\bin\Debug\netcoreapp2.1\StarshitSpeeder.dll
+C:\Workspace\ECUtbildning\HEM03_PhilipEnglundBeta\StarshitSpeeder\StarshitSpeeder\bin\Debug\netcoreapp2.1\StarshitSpeeder.pdb
+C:\Workspace\ECUtbildning\HEM03_PhilipEnglundBeta\StarshitSpeeder\StarshitSpeeder\obj\Debug\netcoreapp2.1\StarshitSpeeder.csprojAssemblyReference.cache
+C:\Workspace\ECUtbildning\HEM03_PhilipEnglundBeta\StarshitSpeeder\StarshitSpeeder\obj\Debug\netcoreapp2.1\StarshitSpeeder.csproj.CoreCompileInputs.cache
+C:\Workspace\ECUtbildning\HEM03_PhilipEnglundBeta\StarshitSpeeder\StarshitSpeeder\obj\Debug\netcoreapp2.1\StarshitSpeeder.AssemblyInfoInputs.cache
+C:\Workspace\ECUtbildning\HEM03_PhilipEnglundBeta\StarshitSpeeder\StarshitSpeeder\obj\Debug\netcoreapp2.1\StarshitSpeeder.AssemblyInfo.cs
+C:\Workspace\ECUtbildning\HEM03_PhilipEnglundBeta\StarshitSpeeder\StarshitSpeeder\obj\Debug\netcoreapp2.1\StarshitSpeeder.dll
+C:\Workspace\ECUtbildning\HEM03_PhilipEnglundBeta\StarshitSpeeder\StarshitSpeeder\obj\Debug\netcoreapp2.1\StarshitSpeeder.pdb
