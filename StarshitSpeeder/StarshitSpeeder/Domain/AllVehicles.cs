@@ -9,18 +9,23 @@ namespace StarshitSpeeder.Domain
     {
         public string WheelColor { get; }
 
-        public GolfCar(string wheelColor, string brand, string registrationNumber, string color, Engine engine)
+        public Person Owner { get; }
+
+        public GolfCar(string wheelColor, string brand, string registrationNumber, string color, Person owner, Engine engine)
         {
+            WheelColor = wheelColor;
+
             Brand = brand;
 
             RegistrationNumber = registrationNumber;
 
             Color = color;
 
-            Engine = engine;
+            Owner = owner;
 
-            WheelColor = wheelColor;
+            Engine = engine;
         }
+     
     }
     class FlyingShip : Vehicle
     {
@@ -28,7 +33,7 @@ namespace StarshitSpeeder.Domain
        
         public Person Owner { get; }
 
-        public FlyingShip(string brand, string registrationNumber, string color, Engine engine, Person owner)
+        public FlyingShip(string brand, string registrationNumber, string color, Person owner, Engine engine)
         {
             Brand = brand;
 
@@ -36,10 +41,10 @@ namespace StarshitSpeeder.Domain
 
             Color = color;
 
-            Engine = engine;
-
             Owner = owner;
-        }
 
+            Engine = engine;
+        }
+       
     }
 }

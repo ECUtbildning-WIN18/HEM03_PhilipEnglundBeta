@@ -12,10 +12,10 @@ namespace StarshitSpeeder.Domain
 
         public int ImperialSoldierID { get; }
 
-        Random RandomNumber = new Random();
-
         public Person(string firstName, string lastName)
         {
+            Random RandomNumber = new Random(42);
+
             FirstName = firstName;
 
             LastName = lastName;

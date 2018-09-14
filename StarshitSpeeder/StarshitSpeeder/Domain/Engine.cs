@@ -8,17 +8,22 @@ namespace StarshitSpeeder.Domain
     {
         public int SerialNumber { get; }
 
-        public int OutputKiloWatt { get; set; } = 50;
-
+        public int OutputKiloWatt { get; }
+        
         public string Type { get; } 
 
-        Random RandomNumber = new Random();
+        public bool EngineOnOff { get; set; } //On/Off
 
-        public Engine(int outputKiloWatt, string type)
+        public int UsingPower { get; set; } = 0;
+
+        public Engine(string type, int outputKiloWatt)
         {
-            SerialNumber = RandomNumber.Next(1000000, 9999999);
             OutputKiloWatt = outputKiloWatt;
+
+            SerialNumber = new Random(345).Next(100000, 999999);
+
             Type = type;
         }
+
     }
 }

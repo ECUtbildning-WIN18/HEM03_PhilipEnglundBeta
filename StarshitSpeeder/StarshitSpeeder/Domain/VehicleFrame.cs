@@ -14,6 +14,23 @@ namespace StarshitSpeeder.Domain
 
         private string CoffeeHolder = "A holder for your Coffee";
 
-        public Engine Engine { get; set; }
+        public Engine Engine { get; protected set; }
+
+        public void StartEngine()
+        {
+            Engine.EngineOnOff = true;
+        }
+
+        public void StopEngine()
+        {
+            Engine.EngineOnOff = false;
+        }
+
+        public void Accelerate()
+        {
+            if (Engine.EngineOnOff)
+                Engine.UsingPower += Engine.OutputKiloWatt;
+        }
+        
     }
 }
