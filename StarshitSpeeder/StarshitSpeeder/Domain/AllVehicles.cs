@@ -7,44 +7,23 @@ namespace StarshitSpeeder.Domain
 {
     class GolfCar : Vehicle
     {
-        public string WheelColor { get; }
+        public Engine Engine { get; }
 
-        public Person Owner { get; }
-
-        public GolfCar(string wheelColor, string brand, string registrationNumber, string color, Person owner, Engine engine)
+        public GolfCar() : base(new Person("Adama", "Commander"), "Golf Car", "ATH960", "Green")
         {
-            WheelColor = wheelColor;
-
-            Brand = brand;
-
-            RegistrationNumber = registrationNumber;
-
-            Color = color;
-
-            Owner = owner;
-
-            Engine = engine;
+            Engine = new Engine("Yamaha G19", 70);
         }
-     
     }
     class FlyingShip : Vehicle
     {
-       public bool HyperDrive { get; set; }
-       
-        public Person Owner { get; }
+        public Engine Engine { get; }
 
-        public FlyingShip(string brand, string registrationNumber, string color, Person owner, Engine engine)
+        public Person FirstOfficer { get; }
+
+        public FlyingShip() : base(new Person("Adama", "Commander"), "Battlestar Galactica", "GHX470", "Green")
         {
-            Brand = brand;
-
-            RegistrationNumber = registrationNumber;
-
-            Color = color;
-
-            Owner = owner;
-
-            Engine = engine;
+            Engine = new Engine("FTL", 5000);
+            FirstOfficer = new Person("Han", "Solo");
         }
-       
     }
 }

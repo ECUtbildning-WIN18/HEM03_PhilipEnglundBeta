@@ -6,29 +6,18 @@ namespace StarshitSpeeder
     {
         static void Main(string[] args)
         {
-            Person adama = new Person("Adama", "Commander");
+            FlyingShip battlestar = new FlyingShip();
+
+            GolfCar golfCar = new GolfCar();
+
+            golfCar.Engine.StartEngine();
+            golfCar.Engine.Accelerate();
+
+            battlestar.Engine.StartEngine();
+            battlestar.Engine.Accelerate();
 
 
-            GolfCar golfCar = new GolfCar
-                ("Brown",
-                "Golf Car",
-                "ABc123",
-                "Green", 
-                adama,
-                new Engine("Yamaha G19", 50));
-
-            FlyingShip battleStarGalactica = new FlyingShip
-                ("Battlestar Galactica",
-                "ABC124",
-                "Green",
-                adama,
-                new Engine("FTL", 5000));
-
-            battleStarGalactica.StartEngine();
-            battleStarGalactica.Accelerate();
-
-
-            Console.WriteLine();
+            battlestar.FirstOfficer.PickNose();
         }
     }
 }

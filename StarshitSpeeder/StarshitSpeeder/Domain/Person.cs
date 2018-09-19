@@ -10,17 +10,22 @@ namespace StarshitSpeeder.Domain
 
         public string LastName { get; }
 
-        public int ImperialSoldierID { get; }
+        public int ImperialSoldierNumber { get; }
+
+        public bool IsDisgusting { get; set; }
 
         public Person(string firstName, string lastName)
         {
-            Random RandomNumber = new Random(42);
-
             FirstName = firstName;
 
             LastName = lastName;
 
-            ImperialSoldierID = RandomNumber.Next(1000, 9999);
+            ImperialSoldierNumber = new Random().Next(1000, 9999);
+        }
+
+        public void PickNose()
+        {
+            IsDisgusting = true;
         }
     }
 }

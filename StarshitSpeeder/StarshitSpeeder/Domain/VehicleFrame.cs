@@ -6,31 +6,23 @@ namespace StarshitSpeeder.Domain
 {
     class Vehicle
     {
-        public string Brand { get; protected set; }
+        public Person Owner { get; set; }
 
-        public string RegistrationNumber { get; protected set; }
+        private string Model { get; }
 
-        public string Color { get; protected set; }
+        private string RegistrationNumber { get; }  
 
-        private string CoffeeHolder = "A holder for your Coffee";
+        private string Color { get; }
 
-        public Engine Engine { get; protected set; }
-
-        public void StartEngine()
+        public Vehicle(Person owner, string model, string registrationNumber, string color)
         {
-            Engine.EngineOnOff = true;
-        }
+            Owner = owner;
 
-        public void StopEngine()
-        {
-            Engine.EngineOnOff = false;
-        }
+            Model = model;
 
-        public void Accelerate()
-        {
-            if (Engine.EngineOnOff)
-                Engine.UsingPower += Engine.OutputKiloWatt;
+            RegistrationNumber = registrationNumber;
+
+            Color = color;
         }
-        
     }
 }
