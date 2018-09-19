@@ -6,14 +6,23 @@ namespace StarshitSpeeder.Domain
 {
     class Vehicle
     {
-        public string Brand { get; protected set; }
+        public Person Owner { get; set; }
 
-        public string RegistrationNumber { get; protected set; }
+        private string Model { get; }
 
-        public string Color { get; protected set; }
+        private string RegistrationNumber { get; }  
 
-        private string CoffeeHolder = "A holder for your Coffee";
+        private string Color { get; }
 
-        public Engine Engine { get; set; }
+        public Vehicle(Person owner, string model, string registrationNumber, string color)
+        {
+            Owner = owner;
+
+            Model = model;
+
+            RegistrationNumber = registrationNumber;
+
+            Color = color;
+        }
     }
 }

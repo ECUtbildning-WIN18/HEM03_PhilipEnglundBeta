@@ -6,19 +6,40 @@ namespace StarshitSpeeder.Domain
 {
     class Engine
     {
-        public int SerialNumber { get; }
+        public int SerialNumber { get; } 
 
-        public int OutputKiloWatt { get; set; } = 50;
+        public string Type { get; }
 
-        public string Type { get; } 
+        public int EngineOutput { get; }
 
-        Random RandomNumber = new Random();
+        public int UsingEngineOutput { get; internal set; } 
 
-        public Engine(int outputKiloWatt, string type)
+        public bool IsOn { get; set; } 
+
+        public Engine(string type, int engineOutput)
         {
-            SerialNumber = RandomNumber.Next(1000000, 9999999);
-            OutputKiloWatt = outputKiloWatt;
+            SerialNumber = new Random().Next(10000, 99999);
+
             Type = type;
+
+            EngineOutput = engineOutput;
         }
+
+        public void StartEngine()
+        {
+            IsOn = true;
+        }
+
+        public void StopEngine()
+        {
+            IsOn = false;
+        }
+
+        public virtual void Accelerate()
+        {
+            if (IsOn)
+                UsingEngineOutput = EngineOutput;
+        }
+
     }
 }
